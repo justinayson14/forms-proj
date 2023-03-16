@@ -1,7 +1,53 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Roboto&display=swap');
+
+:root {
     box-sizing: border-box;
+    --white: #f9f9f9;
 }
 
 body {
-    background-image: url('stuff/mike-smith-0FijUNA1GiY-unsplash.jpg');
+    background: no-repeat url('stuff/mike-smith-0FijUNA1GiY-unsplash.jpg');
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.content-container {
+    padding-bottom: 2.5rem;
+}
+
+.form-container {
+    min-width: 400px;
+    min-height: 500px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+}
+
+.img-credit {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.img-credit a:hover {
+    color: #d7d7d7;
 }
