@@ -13,39 +13,41 @@
         <div class="content-container">
             <div class="form-container">
                 <h1>Create your account.</h1>
-                <div class="input-row">
-                    <div class="row-input">
-                        <label for="first-name">
-                            <p>First Name</p>
-                            <input type="text" id="first-name" name="user-name">
-                        </label>
-                        <label for="last-name">
-                            <p>Last Name</p>
-                            <input type="text" id="last-name" name="user-last">
-                        </label>
+                <form action="" method="get">
+                    <div class="input-row">
+                        <div class="row-input">
+                            <label for="first-name">
+                                <p>First Name</p>
+                                <input type="text" id="first-name" name="user-name" required>
+                            </label>
+                            <label for="last-name">
+                                <p>Last Name</p>
+                                <input type="text" id="last-name" name="user-last" required>
+                            </label>
+                        </div>
+                        <div class="row-input">
+                            <label for="email">
+                                <p>Email</p>
+                                <input type="email" id="email" name="user-email" required>
+                            </label>
+                            <label for="phone-num">
+                                <p>Phone Number</p>
+                                <input type="text" id="phone-num" name="user-num" required>
+                            </label>
+                        </div>
+                        <div class="row-input">
+                            <label for="pass">
+                                <p>Password</p>
+                                <input type="password" id="pass" name="user-pass" required>
+                            </label>
+                            <label for="confirm-pass">
+                                <p>Confirm Password</p>
+                                <input type="password" id="confirm-pass" name="user-pass" required>
+                            </label>
+                        </div>
                     </div>
-                    <div class="row-input">
-                        <label for="email">
-                            <p>Email</p>
-                            <input type="text" id="email" name="user-email">
-                        </label>
-                        <label for="phone-num">
-                            <p>Phone Number</p>
-                            <input type="text" id="phone-num" name="user-num">
-                        </label>
-                    </div>
-                    <div class="row-input">
-                        <label for="pass">
-                            <p>Password</p>
-                            <input type="password" id="pass" name="user-pass">
-                        </label>
-                        <label for="confirm-pass">
-                            <p>Confirm Password</p>
-                            <input type="password" id="confirm-pass" name="user-pass">
-                        </label>
-                    </div>
-                </div>
-                <button type="submit">Create Account</button>
+                    <button type="submit">Create Account</button>
+                </form>
                 <p>Have an account? <a class='login' href="">Login here.</a></p>             
             </div>
         </div>
