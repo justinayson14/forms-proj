@@ -78,6 +78,12 @@ input {
     font-size: 18px;
 }
 
+input:invalid + .require-label::after {
+    color: red;
+    content: '*required';
+    font-size: .7rem;
+}
+
 button {
     display: flex;
     justify-content: center;
