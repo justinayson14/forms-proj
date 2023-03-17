@@ -36,7 +36,7 @@
                             </label>
                             <label for="phone-num">
                                 <p>Phone Number</p>
-                                <input type="tel" id="phone-num" name="user-num" required>
+                                <input type="tel" id="phone-num" name="user-num" placeholder='xxx xxx xxxx' pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
                                 <div class="require-label"></div>
                             </label>
                         </div>
@@ -49,7 +49,7 @@
                             <label for="confirm-pass">
                                 <p>Confirm Password</p>
                                 <input type="password" id="confirm-pass" name="user-pass" required>
-                                <div class="require-label"></div>
+                                <div id="error-match"></div>
                             </label>
                         </div>
                     </div>
