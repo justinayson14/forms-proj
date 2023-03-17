@@ -78,10 +78,14 @@ input {
     font-size: 18px;
 }
 
-input:invalid + .require-label::after {
-    color: red;
-    content: '*required';
+.require-label,
+#error-match{
     font-size: .7rem;
+    color: red;
+}
+
+input:invalid:focus + .require-label::before{
+    content: '*invalid';
 }
 
 button {
